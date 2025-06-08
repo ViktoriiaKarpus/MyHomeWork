@@ -26,9 +26,6 @@ public class MathOperations {
         return Math.abs(x - y);
     }
 
-    //squareArea(int side) — возвращает площадь квадрата
-    //squarePerimeter(int side) — возвращает периметр
-
     public static int squareArea(int side) {
         return side * side;
     }

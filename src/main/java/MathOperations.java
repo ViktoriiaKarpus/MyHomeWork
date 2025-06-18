@@ -1,5 +1,3 @@
-package org.example;
-
 public class MathOperations {
 
     public static int add(int x, int y) {

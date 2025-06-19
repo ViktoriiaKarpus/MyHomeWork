@@ -1,6 +1,8 @@
+package classes_objects;
+
 public class Point {
     /**
-     * Создайте класс Point с координатами x и y.
+     * Создайте класс classes_objects. Point с координатами x и y.
      * Реализуйте конструктор, геттеры,
      * сеттер только для x, и метод print(),
      * выводящий координаты.

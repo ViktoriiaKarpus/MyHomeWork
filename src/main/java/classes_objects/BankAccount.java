@@ -1,7 +1,9 @@
+package classes_objects;
+
 public class BankAccount {
 
     /**
-     * Создайте класс BankAccount с полями owner и balance.
+     * Создайте класс classes_objects.BankAccount с полями owner и balance.
      * Реализуйте конструктор, геттеры, сеттер для владельца,
      * методы deposit(amount) и withdraw(amount) и
      * метод printBalance().

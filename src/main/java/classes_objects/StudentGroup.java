@@ -1,5 +1,7 @@
+package classes_objects;
+
 public class StudentGroup {
-    /**Создайте класс StudentGroup
+    /**Создайте класс classes_objects. StudentGroup
      * с полями groupName и studentCount.
      * Реализуйте конструктор, геттеры и сеттеры,
      * и метод printInfo(), выводящий информацию о группе и количестве студентов.
@@ -12,7 +14,6 @@ public class StudentGroup {
         this.groupName = groupName;
         this.studentCount = studentCount;
     }
-
 
     public int getStudentCount() {
         return studentCount;
@@ -33,7 +34,5 @@ public class StudentGroup {
     public void printInfo(){
         System.out.println("GroupName: " + groupName + " " + "StudentCount: " + studentCount);
     }
-
-
 
 }

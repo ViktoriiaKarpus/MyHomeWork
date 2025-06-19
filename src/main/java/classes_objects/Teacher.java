@@ -38,5 +38,4 @@ public class Teacher {
     public void printInfo(){
         System.out.println("Name :" + name + " " + "Subject :" + subject);
     }
-
 }

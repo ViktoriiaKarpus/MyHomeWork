@@ -37,5 +37,4 @@ public class Laptop {
     public void printInfo(){
         System.out.println("Brand: " + brand + " " + "Price: " + price);
     }
-
 }

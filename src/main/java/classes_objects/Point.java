@@ -2,7 +2,7 @@ package classes_objects;
 
 public class Point {
     /**
-     * Создайте класс classes_objects. Point с координатами x и y.
+     * Создайте класс Point с координатами x и y.
      * Реализуйте конструктор, геттеры,
      * сеттер только для x, и метод print(),
      * выводящий координаты.
@@ -30,7 +30,7 @@ public class Point {
     }
 
     public void print() {
-        System.out.println("Coordinate for X is :" + x + " "+ " Coordinate for Y is: " + y);
+        System.out.println("Coordinate for X is :" + x + " " + " Coordinate for Y is: " + y);
     }
 
 

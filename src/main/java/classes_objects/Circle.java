@@ -29,8 +29,4 @@ public class Circle {
     public double calculateCircumference(){
         return 2 * Math.PI * radius;
     }
-
-
-
-
 }

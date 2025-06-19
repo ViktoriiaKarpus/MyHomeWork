@@ -2,7 +2,7 @@ package classes_objects;
 
 public class Book {
     /**
-     * Создайте класс classes_objects. Book с полями title и author.
+     * Создайте класс Book с полями title и author.
      * Реализуйте конструктор, геттеры и сеттеры, и метод printInfo(),
      * выводящий название и автора книги.
      * В main создайте книгу, измените автора и выведите информации

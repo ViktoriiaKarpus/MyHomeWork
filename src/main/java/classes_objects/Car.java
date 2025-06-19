@@ -2,7 +2,7 @@ package classes_objects;
 
 public class Car {
     /**
-     * Создайте класс classes_objects. Car с полями brand (строка) и year (целое число).
+     * Создайте класс Car с полями brand (строка) и year (целое число).
      * Реализуйте конструктор с двумя параметрами,
      * геттеры и сеттеры для обоих полей, метод print(),
      * выводящий информацию о марке и годе выпуска.
@@ -37,6 +37,4 @@ public class Car {
     public void print() {
         System.out.println("Brand: " + brand + " " + "Year: " + year);
     }
-
-
 }

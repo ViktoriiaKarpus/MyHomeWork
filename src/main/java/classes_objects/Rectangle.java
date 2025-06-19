@@ -2,7 +2,7 @@ package classes_objects;
 
 public class Rectangle {
     /**
-     * Создайте класс classes_objects. Rectangle с полями width и height.
+     * Создайте класс Rectangle с полями width и height.
      * Реализуйте конструктор, геттеры для ширины и высоты,
      * сеттер только для ширины и метод calculateArea() для расчёта площади.
      * В main создайте прямоугольник,
@@ -31,5 +31,4 @@ public class Rectangle {
     public double calculateArea(){
         return width * height;
     }
-
 }

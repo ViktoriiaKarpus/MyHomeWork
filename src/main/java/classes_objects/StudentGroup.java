@@ -1,3 +1,5 @@
+package classes_objects;
+
 public class StudentGroup {
     /**Создайте класс StudentGroup
      * с полями groupName и studentCount.
@@ -12,7 +14,6 @@ public class StudentGroup {
         this.groupName = groupName;
         this.studentCount = studentCount;
     }
-
 
     public int getStudentCount() {
         return studentCount;
@@ -33,7 +34,4 @@ public class StudentGroup {
     public void printInfo(){
         System.out.println("GroupName: " + groupName + " " + "StudentCount: " + studentCount);
     }
-
-
-
 }

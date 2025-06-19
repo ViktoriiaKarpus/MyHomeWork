@@ -1,3 +1,5 @@
+package classes_objects;
+
 public class Car {
     /**
      * Создайте класс Car с полями brand (строка) и year (целое число).
@@ -35,6 +37,4 @@ public class Car {
     public void print() {
         System.out.println("Brand: " + brand + " " + "Year: " + year);
     }
-
-
 }

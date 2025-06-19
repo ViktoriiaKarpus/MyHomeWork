@@ -1,3 +1,5 @@
+package classes_objects;
+
 public class Book {
     /**
      * Создайте класс Book с полями title и author.

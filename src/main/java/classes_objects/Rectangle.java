@@ -1,3 +1,5 @@
+package classes_objects;
+
 public class Rectangle {
     /**
      * Создайте класс Rectangle с полями width и height.
@@ -29,5 +31,4 @@ public class Rectangle {
     public double calculateArea(){
         return width * height;
     }
-
 }

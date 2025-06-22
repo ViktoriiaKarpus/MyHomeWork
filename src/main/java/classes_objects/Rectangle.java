@@ -28,6 +28,10 @@ public class Rectangle {
         width = newWidth;
     }
 
+    public void setHeight(double newHeight){
+        height = newHeight;
+    }
+
     public double calculateArea(){
         return width * height;
     }

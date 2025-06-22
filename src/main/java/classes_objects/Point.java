@@ -29,6 +29,10 @@ public class Point {
         x = newX;
     }
 
+    public void setY(double newY) {
+        y = newY;
+    }
+
     public void print() {
         System.out.println("Coordinate for X is :" + x + " " + " Coordinate for Y is: " + y);
     }

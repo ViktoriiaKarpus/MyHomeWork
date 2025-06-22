@@ -32,7 +32,7 @@ public class Book {
         title = newTitle;
     }
 
-    public void printInfo(){
-        System.out.println("Title: " + title + "Author: " + author);
+    public void printInfo() {
+        System.out.println("Title: " + title + " " + "Author: " + author);
     }
 }

@@ -39,6 +39,6 @@ public class BankAccount {
     }
 
     public void printBalance() {
-        System.out.println("Balance: " + balance);
+        System.out.printf("Владелец: %-15s  Баланс: %10.2f $.%n", owner, balance);
     }
 }

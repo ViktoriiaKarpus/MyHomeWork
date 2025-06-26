@@ -45,8 +45,4 @@ public class Company {
                 ", Name: " + employeeName +
                 ", Company Name: " + companyName);
     }
-
-
-
-
 }

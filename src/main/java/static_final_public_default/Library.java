@@ -55,6 +55,4 @@ public class Library {
     public void setCategory(String newCategory) {
       category = newCategory;
     }
-
-
 }

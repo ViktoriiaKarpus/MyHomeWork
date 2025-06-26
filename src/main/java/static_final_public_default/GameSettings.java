@@ -41,9 +41,4 @@ public class GameSettings {
                 ", Current Players: " + currentPlayers +
                 ", Max Players: " + maxPlayers);
     }
-
-
-
-
-
 }

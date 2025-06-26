@@ -47,8 +47,5 @@ public class Main {
         person1.setFirstName("Mia");
         person1.setLastName("Kai");
         person1.printPersonInfo();
-
-
-
     }
 }

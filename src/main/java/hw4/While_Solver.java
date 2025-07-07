@@ -65,5 +65,4 @@ public class While_Solver {
         }
         return i;
     }
-
 }

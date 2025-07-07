@@ -16,14 +16,14 @@ public class If_Else_Solver {
      */
 
 
-    public static String findTheSignOfTheNumber(int num) {
+    public static String findTheSignOfTheNumber(int number) {
         String description = "";
 
-        if (num > 0) {
+        if (number > 0) {
             description = "The Number is positive";
-        } else if (num < 0) {
+        } else if (number < 0) {
             description = "The Number is negative";
-        } else if (num == 0) {
+        } else if (number == 0) {
             description = "The Number equals zero";
         }
         return description;
@@ -78,6 +78,8 @@ public class If_Else_Solver {
             case 1:
                 description = "Unsatisfactory";
                 break;
+            default:
+                description = "You don't have such grade";
         }
         return description;
     }
@@ -142,16 +144,16 @@ public class If_Else_Solver {
      * System.out.println()
      */
 
-    public static String findTestResults(int num) {
+    public static String findTestResults(int numb) {
         String description = "";
 
-        if (num >= 90) {
+        if (numb >= 90) {
             description = "Excellent";
-        } else if (num >= 75 && num <= 89) {
+        } else if (numb >= 75 && numb <= 89) {
             description = "Good";
-        } else if (num >= 60 && num <= 74) {
+        } else if (numb >= 60 && numb <= 74) {
             description = "Satisfactory";
-        } else if (num < 60) {
+        } else if (numb < 60) {
             description = "Unsatisfactory";
         }
         return description;

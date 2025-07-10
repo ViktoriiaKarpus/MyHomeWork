@@ -10,11 +10,11 @@ public class For_Solver {
      * оператор %
      * if
      * System.out.println()
-     * */
+     */
 
-    public static void testDivideNumbers(){
-        for(int i = 1; i <= 100; i++){
-            if(i % 3 == 0){
+    public static void testDivideNumbers() {
+        for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0) {
                 System.out.print(i + " ");
             }
         }
@@ -31,12 +31,12 @@ public class For_Solver {
      * for
      * переменная int sum = 0
      * System.out.println()
-     * */
+     */
 
-    public static int testSumNumbers(int n){
+    public static int testSumNumbers(int n) {
         int sum = 0;
-        for(int i = 1; i < n; i++){
-            sum+=i;
+        for (int i = 1; i <= n; i++) {
+            sum += i;
         }
         return sum;
     }
@@ -50,10 +50,10 @@ public class For_Solver {
      * for
      * System.out.println()
      * арифметические операторы
-     * */
+     */
 
-    public static void printMultiplicationTable(int num ){
-        for(int i = 1; i <=10; i++){
+    public static void printMultiplicationTable(int num) {
+        for (int i = 1; i <= 10; i++) {
             System.out.println(num + "*" + i + "=" + (num * i));
         }
     }
@@ -69,15 +69,15 @@ public class For_Solver {
      * if-else
      * логическая переменная (boolean isPrime = true)
      * System.out.println()
-     * */
+     */
 
-    public static boolean isNumberSimple(int num){
+    public static boolean isNumberSimple(int num) {
         boolean isPrime = true;
-        if(num < 2){
+        if (num < 2) {
             isPrime = false;
-        } else{
-            for(int i = 2; i < num; i++){
-                if(num % i == 0){
+        } else {
+            for (int i = 2; i < num; i++) {
+                if (num % i == 0) {
                     isPrime = false;
                     break;
                 }
@@ -93,11 +93,11 @@ public class For_Solver {
      * Методы и конструкции:
      * for
      * System.out.println()
-     * */
+     */
 
-    public static void printNumbers(){
-        for(int i = 1; i <10;i++){
-            System.out.print( i + " ");
+    public static void printNumbers() {
+        for (int i = 1; i <= 10; i++) {
+            System.out.print(i + " ");
         }
     }
 }

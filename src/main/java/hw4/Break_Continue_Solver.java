@@ -46,12 +46,11 @@ public class Break_Continue_Solver {
          * System.out.println()
          * */
 
-        for (int i = 1; i < 20; i++) {
-            if (i % 3 == 0)
-                continue;
-            System.out.println(i);
-        }
-
+          for (int i = 1; i < 20; i++) {
+              if (i % 3 == 0)
+                  continue;
+              System.out.println(i);
+          }
         /**
          * 3. Вывод только положительных чисел (использовать continue)
          * Задача:
@@ -66,40 +65,44 @@ public class Break_Continue_Solver {
 
         Scanner scanner3 = new Scanner(System.in);
         while (true) {
-            System.out.println("Enter the number : ");
+            System.out.println("Enter the number: ");
             int inputNumber = scanner3.nextInt();
+
             if (inputNumber == 0) {
                 break;
             }
+
             if (inputNumber < 0) {
                 continue;
             }
-            System.out.println("Positive num " + inputNumber);
-            System.out.println("Program ended.");
 
-            /**
-             * 4. Ввод строк до команды "stop" (использовать break)
-             * Задача:
-             * Программа должна запрашивать строки у пользователя и завершаться только тогда,
-             * когда введена команда "stop".
-             * Методы и конструкции:
-             * Scanner
-             * while (true)
-             * метод .equals("stop")
-             * break
-             * System.out.println()
-             * */
+            System.out.println("Positive num: " + inputNumber);
+        }
+        System.out.println("Program ended.");
 
-            Scanner scanner4 = new Scanner(System.in);
-            while (true) {
-                System.out.println("Enter the line : ");
-                String program = "stop";
-                String inputWord = scanner4.nextLine();
-                if (program.equals(inputWord)) {
-                    break;
-                }
+        /**
+         * 4. Ввод строк до команды "stop" (использовать break)
+         * Задача:
+         * Программа должна запрашивать строки у пользователя и завершаться только тогда,
+         * когда введена команда "stop".
+         * Методы и конструкции:
+         * Scanner
+         * while (true)
+         * метод .equals("stop")
+         * break
+         * System.out.println()
+         * */
+
+        Scanner scanner4 = new Scanner(System.in);
+        while (true) {
+            System.out.println("Enter the line : ");
+            String program = "stop";
+            String inputWord = scanner4.nextLine();
+            if (program.equals(inputWord)) {
+                break;
             }
         }
     }
 }
+
 

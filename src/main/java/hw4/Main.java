@@ -127,8 +127,7 @@ public class Main {
         Scanner scanner16 = new Scanner(System.in);
         System.out.println(" Enter the number: ");
         int numP = scanner16.nextInt();
-        int resultPositiveNumber = printPositiveNumber(numP);
-        System.out.println(resultPositiveNumber);
+        printCountdownFromNumber(numP);
 
     }
 }

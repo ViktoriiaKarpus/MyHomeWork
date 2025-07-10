@@ -57,12 +57,12 @@ public class While_Solver {
      * декремент number--
      * */
 
-    public static int printPositiveNumber(int num){
+    public static void printCountdownFromNumber(int num){
         int i= 1;
         while(num > i){
             System.out.println(num);
             num--;
         }
-        return i;
+        System.out.println(i);
     }
 }

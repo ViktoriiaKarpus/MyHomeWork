@@ -18,5 +18,6 @@ public class Task3 {
         int a = 25;
         System.out.println(num.higher(a));
         System.out.println(num.lower(a));
+
     }
 }

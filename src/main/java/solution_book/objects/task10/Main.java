@@ -26,6 +26,5 @@ public class Main {
         System.out.println(emailAddress2.hashCode());
 
         System.out.println(emails.size());
-
     }
 }

@@ -1,6 +1,8 @@
 package practice_11;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class ValidationTestConstants {
 
@@ -31,5 +33,31 @@ public class ValidationTestConstants {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
 
+    public boolean isValidEmail(String email) {
+        return email != null && email.matches("^[\\w.-]+@[\\w.-]+\\.\\w{2,}$");
+    }
+
+    public int factorial(int n) {
+        if (n < 0) throw new IllegalArgumentException("Negative numbers not allowed");
+        return (n == 0) ? 1 : n * factorial(n - 1);
+    }
+
+    public int findSecondMax(int[] numbers) {
+        return Arrays.stream(numbers).distinct().sorted().skip(numbers.length - 2).findFirst().orElseThrow();
+    }
+
+    public int countWords(String sentence) {
+        return sentence.trim().isEmpty() ? 0 : sentence.split("\\s+").length;
+    }
+
+    public boolean isValidPhoneNumber(String phone) {
+        return phone.matches("\\+\\d{1,3} \\d{10}");
+    }
+
+    public List<Integer> filterEvenNumbers(List<Integer> numbers) {
+        return numbers.stream()
+                .filter(n -> n % 2 == 0)
+                .collect(Collectors.toList());
+    }
 
 }

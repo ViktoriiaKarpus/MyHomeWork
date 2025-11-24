@@ -47,6 +47,7 @@ public class Task2 extends ValidationConstantsTest{
 
     @Test
     public void countVowelsNullInputThrowsExceptions(){
+
         assertThrows(IllegalArgumentException.class,()->{
             validationTestConstants.countVowels(null);
         },"Check if Null String lead to IllegalArgumentException");

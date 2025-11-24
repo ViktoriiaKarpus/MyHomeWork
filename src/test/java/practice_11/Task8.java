@@ -42,6 +42,7 @@ public class Task8 extends ValidationConstantsTest {
     @ParameterizedTest
     @MethodSource("findSecondMaxTestData")
     void testValidSecondMax(int[] input, int expectedResult) {
+
         int actualResult = validationTestConstants.findSecondMax(input);
 
         assertEquals(expectedResult, actualResult);

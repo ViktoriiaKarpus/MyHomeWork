@@ -36,6 +36,7 @@ public class Task5 extends ValidationConstantsTest{
 
     })
     public void testUsualYears(int input){
+
         assertFalse(validationTestConstants.isLeapYear(input));
     }
 
@@ -45,6 +46,7 @@ public class Task5 extends ValidationConstantsTest{
 
     })
     public void testTheYearsThatNotDividedOnTheHundredAndFourHundred(int input){
+
         assertFalse(validationTestConstants.isLeapYear(input));
     }
 }

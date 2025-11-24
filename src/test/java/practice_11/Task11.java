@@ -38,6 +38,7 @@ public class Task11 extends ValidationConstantsTest {
     @ParameterizedTest
     @MethodSource("filterEvenNumbersTestData")
     void testFilterEvenNumbers(List<Integer> input, List<Integer> expectedResult){
+
         List<Integer> actualResult = validationTestConstants.filterEvenNumbers(input);
 
         assertEquals(expectedResult, actualResult);

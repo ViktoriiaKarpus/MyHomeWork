@@ -37,6 +37,7 @@ public class Task4 extends ValidationConstantsTest{
     @ParameterizedTest
     @MethodSource("findMaxTestData")
     void testFindMax(int[] numbers, int expectedResult){
+
         int actualResult = validationTestConstants.findMax(numbers);
 
         assertEquals(expectedResult, actualResult);

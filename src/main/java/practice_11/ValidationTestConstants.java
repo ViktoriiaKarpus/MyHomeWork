@@ -1,6 +1,9 @@
 package practice_11;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -60,4 +63,52 @@ public class ValidationTestConstants {
                 .collect(Collectors.toList());
     }
 
+    public List<String> sortByLength(List<String> words) {
+        return words.stream()
+                .sorted(Comparator.comparingInt(String::length))
+                .collect(Collectors.toList());
+    }
+
+    public boolean isAnagram(String str1, String str2) {
+        if (str1 == null || str2 == null) return false;
+        char[] arr1 = str1.toLowerCase().replaceAll("\\s", "").toCharArray();
+        char[] arr2 = str2.toLowerCase().replaceAll("\\s", "").toCharArray();
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+        return Arrays.equals(arr1, arr2);
+    }
+
+    public double findAverage(int[] numbers) {
+        return Arrays.stream(numbers).average().orElseThrow();
+    }
+
+    public List<Integer> mapToLengths(List<String> words) {
+        return words.stream().map(String::length).collect(Collectors.toList());
+    }
+
+    public String[] splitString(String input, String delimiter) {
+        return input.split(delimiter);
+    }
+
+    public boolean isValidPassword(String password) {
+        if (password == null || password.length() < 8) return false;
+        return password.matches("^(?=.*[A-Z])(?=.*\\d).+$");
+    }
+
+    public int gcd(int a, int b) {
+        return b == 0 ? a : gcd(b, a % b);
+    }
+
+    public boolean isValidJson(String json) {
+        try {
+            new ObjectMapper().readTree(json);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean hasDuplicates(int[] numbers) {
+        return Arrays.stream(numbers).distinct().count() != numbers.length;
+    }
 }

@@ -25,15 +25,15 @@ public class Task1 extends ValidationConstantsTest {
 
     @ParameterizedTest
     @ValueSource(ints = {2, 4, 0, -2, -4})
-
     public void testisEven(int numbers) {
 
         assertTrue(validationTestConstants.isEven(numbers));
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {1,7,11,-3,-5,-9})
-    public void testIsOddNumbersReturnFalse(int numbers){
+    @ValueSource(ints = {1, 7, 11, -3, -5, -9})
+    public void testIsOddNumbersReturnFalse(int numbers) {
+
         assertFalse(validationTestConstants.isEven(numbers));
     }
 }

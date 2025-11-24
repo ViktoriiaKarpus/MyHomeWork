@@ -45,6 +45,7 @@ public class Task7 extends ValidationConstantsTest {
 
     @Test
     public void testNegativeNumberFactorial() {
+
         assertThrows(IllegalArgumentException.class, () -> {
             validationTestConstants.factorial(-1);
         }, "Negative number should throw IllegalArgumentException");

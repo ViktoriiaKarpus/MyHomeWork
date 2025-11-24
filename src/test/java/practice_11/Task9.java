@@ -37,6 +37,7 @@ public class Task9 extends ValidationConstantsTest {
     @ParameterizedTest
     @MethodSource("countWordsTestData")
     void testWords(String input, int expectedResult) {
+
         int actualResult = validationTestConstants.countWords(input);
 
         assertEquals(expectedResult, actualResult);
@@ -44,6 +45,7 @@ public class Task9 extends ValidationConstantsTest {
 
     @Test
     public void testNullString() {
+
         assertThrows(NullPointerException.class, () -> {
             validationTestConstants.countWords(null);
         });

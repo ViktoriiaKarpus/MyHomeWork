@@ -1,8 +1,8 @@
 package tests.complex_tasks_tests;
 
-import hw_complex_tasks.InvalidUserException;
-import hw_complex_tasks.User;
-import hw_complex_tasks.UserValidator;
+import hw_complex_tasks.task2.InvalidUserException;
+import hw_complex_tasks.task2.User;
+import hw_complex_tasks.task2.UserValidator;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;

@@ -1,4 +1,4 @@
-package hw_complex_tasks;
+package hw_complex_tasks.task2;
 
 public class User {
     //* User: Класс пользователя с атрибутами для имени, возраста и электронной почты.

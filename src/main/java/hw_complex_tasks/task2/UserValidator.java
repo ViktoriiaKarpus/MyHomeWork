@@ -1,6 +1,4 @@
-package hw_complex_tasks;
-
-import java.security.PublicKey;
+package hw_complex_tasks.task2;
 
 public class UserValidator {
 

@@ -1,6 +1,6 @@
 package tests.complex_tasks_tests;
 
-import hw_complex_tasks.UserValidator;
+import hw_complex_tasks.task2.UserValidator;
 import org.junit.jupiter.api.BeforeEach;
 
 public class UserValidatorUtils {

@@ -6,19 +6,18 @@ import java.util.List;
 import java.util.Map;
 
 public class MovieService {
-    //Управление рейтингами:
-    //Хранение оценок в  //Управление рейтингами:
-    //    //Хранение оценок в Map<Movie, List<Rating>>.
-    //    //Метод для добавления оценки к фильму. Метод должен быть потокобезопасным и валидировать оценку на
-    //    // допустимость (например, оценка должна быть в пределах от 1 до 10).
-    //    //Возможность расчета средней оценки для каждого фильма..
-    //Метод для добавления оценки к фильму. Метод должен быть потокобезопасным и валидировать оценку на
-    // допустимость (например, оценка должна быть в пределах от 1 до 10).
-    //Возможность расчета средней оценки для каждого фильма.
 
     private final Map<Movie, List<Rating<? extends Number>>> ratings = new HashMap<>();
 
+    public List<Rating<?extends Number >> getRatingsForMovie(Movie movie){
+        return new ArrayList<>(ratings.getOrDefault(movie, new ArrayList<>()));
+    }
+
     public synchronized void addRate(Movie movie, Rating<? extends Number> rating) {
+        if(rating == null || rating.getValue() == null){
+            throw new IllegalArgumentException("Rating cannot be null");
+        }
+
         double value = rating.getValue().doubleValue();
         if (value > 10 || value < 1) {
             throw new IllegalArgumentException("The Valid must be between 1-10");

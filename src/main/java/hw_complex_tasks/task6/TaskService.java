@@ -28,7 +28,7 @@ public class TaskService<T> {
         tasks.removeIf(task -> task.getId().equals(id));
     }
 
-    public List<Task<T>> findtask(Task<T> task) {
+    public List<Task<T>> findTask(Task<T> task) {
         return tasks.stream()
                 .filter(tTask -> tTask.getPriority() == (task.getPriority()))
                 .filter(tTask -> tTask.getStatus().equals(task.getStatus()))

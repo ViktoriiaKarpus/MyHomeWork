@@ -1,4 +1,4 @@
-package hw_pattern.task2;
+package hw_pattern.task2_Record;
 
 public class WarningRecord extends LoggerInformation {
 

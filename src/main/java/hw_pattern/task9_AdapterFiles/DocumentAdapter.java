@@ -11,6 +11,6 @@ public class DocumentAdapter implements DocumentProcessor{
     @Override
     public void process() {
         pdfProcessor.convertToDoc();
-        System.out.println("Processing convert DOC file");
+        System.out.println("Processing PDF file through adapter");
     }
 }

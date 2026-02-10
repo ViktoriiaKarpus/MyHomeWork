@@ -93,7 +93,7 @@ subgraph cluster_2040882840 {
 	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
 <TR><TD ALIGN="LEFT" >(C)DoorClose</TD></TR>
 <HR/>
-<TR><TD ALIGN="LEFT" ># close()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ close()</TD></TR>
 </TABLE>>
 	style=filled
 	margin=0
@@ -121,7 +121,7 @@ DoorLock474407130[
 	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
 <TR><TD ALIGN="LEFT" >(C)DoorLock</TD></TR>
 <HR/>
-<TR><TD ALIGN="LEFT" ># lock()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lock()</TD></TR>
 </TABLE>>
 	style=filled
 	margin=0
@@ -133,7 +133,7 @@ DoorOpen474407130[
 	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
 <TR><TD ALIGN="LEFT" >(C)DoorOpen</TD></TR>
 <HR/>
-<TR><TD ALIGN="LEFT" ># open()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ open()</TD></TR>
 </TABLE>>
 	style=filled
 	margin=0

@@ -2,11 +2,11 @@ package hw_pattern.task12_SmartHome;
 
 public class AC {
 
-    void turnOn(){
+    public void turnOn() {
         System.out.println("Air conditioner is On");
     }
 
-    void turnOff(){
+    public void turnOff() {
         System.out.println("Air conditioner is Off");
     }
 }

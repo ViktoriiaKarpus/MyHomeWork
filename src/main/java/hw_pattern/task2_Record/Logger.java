@@ -10,7 +10,7 @@ public class Logger {
 
     }
 
-    public Logger getInstance(){
+    public static Logger getInstance(){
         if(instance == null){
              instance = new Logger();
         }

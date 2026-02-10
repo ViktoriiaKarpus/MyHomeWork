@@ -93,8 +93,8 @@ subgraph cluster_1075334257 {
 	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
 <TR><TD ALIGN="LEFT" >(C)AC</TD></TR>
 <HR/>
-<TR><TD ALIGN="LEFT" ># turnOff()</TD></TR>
-<TR><TD ALIGN="LEFT" ># turnOn()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ turnOff()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ turnOn()</TD></TR>
 </TABLE>>
 	style=filled
 	margin=0
@@ -106,8 +106,8 @@ Light401063075[
 	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
 <TR><TD ALIGN="LEFT" >(C)Light</TD></TR>
 <HR/>
-<TR><TD ALIGN="LEFT" ># turnOff()</TD></TR>
-<TR><TD ALIGN="LEFT" ># turnOn()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ turnOff()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ turnOn()</TD></TR>
 </TABLE>>
 	style=filled
 	margin=0
@@ -131,8 +131,8 @@ SecuritySystem401063075[
 	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
 <TR><TD ALIGN="LEFT" >(C)SecuritySystem</TD></TR>
 <HR/>
-<TR><TD ALIGN="LEFT" ># activate()</TD></TR>
-<TR><TD ALIGN="LEFT" ># deactivate()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ activate()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ deactivate()</TD></TR>
 </TABLE>>
 	style=filled
 	margin=0

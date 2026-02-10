@@ -5,7 +5,7 @@ public class Game {
     private Character.CharacterBuilder builder = new Character.CharacterBuilder();
 
     public Character createPerson(int health, int damage, String armor, String magic){
-        return new Character.CharacterBuilder()
+        return builder
                 .setHealth(health)
                 .setDamage(damage)
                 .setArmor(armor)

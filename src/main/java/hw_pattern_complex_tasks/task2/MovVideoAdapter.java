@@ -8,7 +8,7 @@ public class MovVideoAdapter implements VideoAdapter {
 
     @Override
     public Stream<String> convertToMP4(String videoPath) {
-        String movData = movVideo.getMoVData(videoPath);
+        String movData = movVideo.getMovData(videoPath);
 
         return Stream.of("MP4 stream from MOV: " + movData);
     }

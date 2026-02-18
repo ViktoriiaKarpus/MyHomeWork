@@ -4,17 +4,23 @@ import java.util.Random;
 
 public class Base62ShorteningStrategy implements ShorteningStrategy {
 
-    private static final String CHAR_POLL = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    private static final int SHORT_URL_LENGTH = 6;
-    private final Random random = new Random();
-
+    private static final String CHAR_POOL =
+            "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     @Override
     public String shorten(String longUrl) {
+        int hash = Math.abs(longUrl.hashCode());
+        return toBase62(hash);
+    }
+
+    private String toBase62(int number) {
         StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < SHORT_URL_LENGTH; i++){
-            sb.append(CHAR_POLL.charAt(random.nextInt(CHAR_POLL.length())));
+
+        while (number > 0) {
+            sb.append(CHAR_POOL.charAt(number % 62));
+            number /= 62;
         }
-        return sb.toString();
+
+        return sb.reverse().toString();
     }
 }

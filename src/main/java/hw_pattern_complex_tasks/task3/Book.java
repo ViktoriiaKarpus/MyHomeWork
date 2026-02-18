@@ -44,7 +44,7 @@ public class Book implements BookInterface {
     }
 
 
-    static class BookBuilder {
+    public static class BookBuilder {
         private String title;
         private String author;
         private String year;

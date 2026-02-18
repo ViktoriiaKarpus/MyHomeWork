@@ -9,12 +9,11 @@ public class InMemoryUrlStorage implements UrlStorage{
 
     private final Map<String, String> urls = new HashMap<>();
 
-    private InMemoryUrlStorage(){
-
+    private InMemoryUrlStorage() {
     }
 
-    static InMemoryUrlStorage getInstance(){
-        if(instance == null){
+    public static InMemoryUrlStorage getInstance() {
+        if (instance == null) {
             instance = new InMemoryUrlStorage();
         }
         return instance;
@@ -27,11 +26,11 @@ public class InMemoryUrlStorage implements UrlStorage{
 
     @Override
     public String getLongUrl(String shortUrl) {
-       return urls.get(shortUrl);
+        return urls.get(shortUrl);
     }
 
     @Override
     public boolean contains(String shortUrl) {
-       return urls.containsKey(shortUrl);
+        return urls.containsKey(shortUrl);
     }
 }

@@ -1,45 +1,44 @@
 package hw_pattern_complex_tasks.task3;
 
-public class BookProxy implements BookContent, BookInterface {
+public class BookProxy implements BookInterface, BookContent {
 
-    private final Book.BookBuilder builder;
+    private final Book book;
     private RealBook realBook;
     private final String contentPath;
 
-
-    public BookProxy(Book.BookBuilder builder, String contentPath) {
-        this.builder = builder;
+    public BookProxy(Book book, String contentPath) {
+        this.book = book;
         this.contentPath = contentPath;
     }
 
     private void loadContent() {
         if (realBook == null) {
-            System.out.println("lazy loading book content from: " + contentPath);
+            System.out.println("Lazy loading book content from: " + contentPath);
             String loadedContent =
-                    "This is the content of the book : " + builder.getTitle();
-            realBook = new RealBook(builder, loadedContent);
+                    "This is the content of the book: " + book.getTitle();
+
+            realBook = new RealBook(book, loadedContent);
         }
+    }
+
+    @Override
+    public String getTitle() {
+        return book.getTitle();
+    }
+
+    @Override
+    public String getAuthor() {
+        return book.getAuthor();
+    }
+
+    @Override
+    public String getYear() {
+        return book.getYear();
     }
 
     @Override
     public String getContent() {
         loadContent();
-
         return realBook.getContent();
-    }
-
-    @Override
-    public String getTitle() {
-        return builder.getTitle();
-    }
-
-    @Override
-    public String getAuthor() {
-        return builder.getAuthor();
-    }
-
-    @Override
-    public String getYear() {
-        return builder.getYear();
     }
 }

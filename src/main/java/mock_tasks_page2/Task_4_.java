@@ -1,6 +1,6 @@
 package mock_tasks_page2;
 
-public class Task3 {
+public class Task_4_ {
     //Поиск максимального числа
 
     public static int findMax(int[] array) {

@@ -1,6 +1,6 @@
 package mock_tasks_page2;
 
-public class Task2 {
+public class Task_3_ {
 
 //Сумма чисел массива
 

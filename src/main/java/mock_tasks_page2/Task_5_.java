@@ -1,6 +1,6 @@
 package mock_tasks_page2;
 
-public class Task5 {
+public class Task_5_ {
 
 
     public static int findFactorial(int n) {

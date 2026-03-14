@@ -1,6 +1,6 @@
 package mock_tasks_page2;
 
-public class Task4 {
+public class Task_6_ {
 
     //Проверка на простое число
 

@@ -1,6 +1,6 @@
 package mock_tasks_page2;
 
-public class Task1 {
+public class Task_2 {
 
     //Проверка палиндрома
 

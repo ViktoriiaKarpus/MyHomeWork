@@ -9,9 +9,7 @@ public class User {
     // Пояснение: реши, как отслеживать общее количество объектов независимо от экземпляров.
 
 
-    public String getName() {
-        return name;
-    }
+
 
     public String name;
     public static int count = 0;
@@ -21,10 +19,13 @@ public class User {
         incrementCount();
     }
 
+    public String getName() {
+        return name;
+    }
+
     public static void incrementCount(){
         count++;
     }
-
 
     public static int getCount(){
         return count;
